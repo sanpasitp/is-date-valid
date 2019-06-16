@@ -12,12 +12,13 @@ test('RegularDateTest_Valid', () => {
 
 test('FebruaryDateTest_Invalid', () => {
     expect(isDateValid(2018, 2, 29)).toBe(false);
+    expect(isDateValid(1900, 2, 29)).toBe(false);
 });
 
 test('FebruaryDateTest2_Valid', () => {
     expect(isDateValid(2016, 2, 29)).toBe(true);
     expect(isDateValid(2019, 2, 28)).toBe(true);
-    expect(isDateValid(2000, 2, 29)).toBe(true);
+    expect(isDateValid(2000, 2, 29)).toBe(true);    
 });
 
 test('OctoberDateTest_Invalid', () => {
