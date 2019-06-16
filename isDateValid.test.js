@@ -1,10 +1,5 @@
 const isDateValid = require('./isDateValid');
 
-/*
-test('case 1', () => {
-    expect(isDateValid("abcde")).toBeNull();
-});*/
-
 test('RegularDateTest_Valid', () => {
     expect(isDateValid(1986, 1, 1)).toBe(true);
     expect(isDateValid(2019, 10, 31)).toBe(true);
